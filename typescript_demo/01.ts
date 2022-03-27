@@ -36,3 +36,34 @@ var ret1: number = add(2, 3)
 function fnHello(): void {
     console.log(`hello`)
 }
+
+
+//Destructuring Assignment
+let a: number[] = [10, 20]
+let [num1, num2, num3] = a
+
+//class
+/* class Person {
+    name: string;
+    age: number;
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    sayHello(): void {
+        console.log(this.name, this.age)
+    }
+} */
+
+//class shorthand
+class Person {
+    public gender: string;
+    constructor(public name: string, public age: number, gender: string) {
+      this.gender = gender;
+    }
+
+    sayHello(): void {
+        console.log(this.name, this.age)
+    }
+}
